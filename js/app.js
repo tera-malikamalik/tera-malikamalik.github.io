@@ -40,6 +40,25 @@ $(document).ready(function () {
             }
         }
     })
+    $('#client-slider').owlCarousel({
+        loop: true,
+        nav: false,
+        items: 5,
+        dots: true,
+        smartSpeed: 600,
+        center: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        responsive: {
+            0: {
+                items: 5
+            },
+            768: {
+                items: 5,
+                margin: 2,
+            }
+        }
+    })
 
     $('.reviews-slider').owlCarousel({
         loop: true,

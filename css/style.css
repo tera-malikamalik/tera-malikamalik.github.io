@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
 
 :root {
-   /*  --brand: #082032; */
-    --brand: #1a5735;
+   /*  --brand: #082032; 
+    --brand: #1a5735; */
+    --brand: #ff4d29;
     --dark: #092032;
     --body: #000000;;
     --border: rgba(0,0,0,0.08);
@@ -60,7 +61,7 @@ section {
     display: block;
     display: grid;
     place-items: center;
-    color: #fff !important;
+    color: #cfddc4 !important;
     border-radius: 100px;
     line-height: 0;
     border-radius: 100px !important;
@@ -99,14 +100,16 @@ section {
 }
 
 .slide1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_banner3.png);
+   /*  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_banner3.png); */
+    background: url(../img/bg_banner3.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .slide2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_banner3.png);
+   /*  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg_banner3.png); */
+   background: url(../img/bg_banner3.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,7 +163,7 @@ section {
     margin: 20px 0;
 }
 .conditions-section a{
-   color: #fff;
+   color:#cfddc4;
    margin: 0 10px;
 }
 
@@ -169,11 +172,11 @@ section {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: var(--brand);
+    color:  var(--brand);
 }
 
 .navbar .navbar-nav .nav-link.active {
-    color: var(--brand);
+    color:  var(--brand);
 }
 
 .navbar-brand {
@@ -190,15 +193,15 @@ section {
 }
 
 .btn-brand {
-    border-color: var(--brand);
-    background-color: var(--brand);
-    color: #fff;
+    border-color: #1a5735;
+    background-color: #6eff00;
+    color: #000000;
 }
 
 .btn-brand:hover {
-    background-color: #22d631;
+    background-color: #1a5735;
     border-color: #223ad652;
-    color: #fff;
+    color: #000000;
 }
 
 .intro {margin-bottom: 36px;
@@ -229,10 +232,12 @@ text-align: center;}
 
 
 #milestone {
-    background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url(../img/bg_banner1.jpg), #082032;;
+    background: linear-gradient( rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url(../img/free.jpg);
+  /*   background: linear-gradient(rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)),url(../img/free.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #milestone h1,
@@ -357,10 +362,15 @@ text-align: center;}
 
 #reviews {
 
-    background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url(../img/bg_banner3.png), #082032;;
+  /*   background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url(../img/bg_banner3.png), #082032;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background: linear-gradient( rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), url(../img/free.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .review {
@@ -446,7 +456,8 @@ text-align: center;}
 }
 
 footer {
-    background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url(../img/bg_banner3.png), #082032;;
+   /*  background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url(../img/bg_banner3.png), #082032; */
+    background: linear-gradient(rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)),url(../img/free.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -468,7 +479,8 @@ footer .navbar-brand {
 }
 
 footer p {
-    color: #ADB3B9;
+   /*  color: #ADB3B9; */
+    color: #fff;
 }
 
 footer .social-icons a {
