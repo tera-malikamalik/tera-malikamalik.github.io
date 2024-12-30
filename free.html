@@ -14,6 +14,13 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function aktifKirimBtn() {
+            document.getElementById("kirim").disabled =false;
+            
+        }
+    </script>
     <title>herlyk citra prima</title>
     <style>
         .wa_btn {
@@ -68,7 +75,7 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-auto">
-                    <p> <i class='bx bxs-envelope'></i> info@herlyk.com</p>
+                    <p> <i class='bx bxs-envelope'></i> info@herlykgroup.com</p>
                     <p> <i class='bx bxs-phone-call'></i> 021 799-7777</p>
                 </div>
                 <div class="col-auto social-icons">
@@ -281,7 +288,7 @@
                 <div class="email">
                   <i class="bi bi-envelope"></i>
                   <h4>Email:</h4>
-                  <p>info@herlyk.com</p>
+                  <p>info@herlykgroup.com</p>
                 </div>
   
                 <div class="email">
@@ -295,8 +302,12 @@
             </div>
   
             <div class="col-lg-8 mt-5 mt-lg-0">
+                <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
+                    <strong>Terimakasih!</strong> Pesan Anda sudah kami terima.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
   
-              <form action="https://formspree.io/f/mrgwjznb" method="post">
+                <form class="php-email-form" id="email-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -311,15 +322,23 @@
                 <div class="form-group mt-3">
                   <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                 </div>
+                <div class="form-group mt-3">
+                    <div class="g-recaptcha" data-sitekey="6Lf9u6gqAAAAANHAEutQ3VrQDkbmngYnsp5FPqN_" data-callback="aktifKirimBtn"></div>
+                </div>
                 <!--  <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div> -->
-                <div class="text-center"><button class="btn btn-brand mt-3" type="submit">Send Message</button></div>
+                <div class="text-center"><button class="btn btn-success mt-3" type="submit" id="kirim" disabled="disabled">Send Message</button>
+                    <button class="btn btn-success mt-3 d-none" type="button" id="tunggu" disabled>
+                        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                        <span role="status">Loading...</span>
+                      </button></div>
               </form>
   
             </div>
+  
   
           </div>
   
@@ -416,7 +435,8 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> 
+    <script src="js/mailjs.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -427,6 +447,13 @@
     <script>
         AOS.init();
       </script>
+      <script type="text/javascript">
+        (function(){
+          emailjs.init({
+            publicKey: "lXuxC7AssU_gPvh_f",
+          });
+        })();
+        </script>
 </body>
 
 </html>
