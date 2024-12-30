@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 
@@ -74,7 +76,7 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
 
-
+    <div id="preloader"></div>
     <!-- TOP NAV -->
     <div class="top-nav" id="home">
         <div class="container">
@@ -653,7 +655,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>
   
-                <form class="php-email-form" id="email-form">
+               <!-- <form class="php-email-form" id="email-form"> -->
+                <form action="sendmail.php" method="POST">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -676,7 +679,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div> -->
-                <div class="text-center"><button class="btn btn-success mt-3" type="submit" id="kirim" disabled="disabled">Send Message</button>
+                <div class="text-center"><button class="btn btn-success mt-3" type="submit" id="kirim" name="btnKirim" >Send Message</button>
                     <button class="btn btn-success mt-3 d-none" type="button" id="tunggu" disabled>
                         <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                         <span role="status">Loading...</span>
@@ -772,13 +775,7 @@
         </div>
         <a href="https://wa.me/6287796670495?text=Halo%20cartrige%20mart" target="_blank" class="wa_btn"><i class="bi bi-whatsapp"></i></a>
     </footer>
-
-
-    <!-- Modal -->
-   
-
-
-
+  
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> 
     <script src="js/mailjs.js"></script>
     <script src="js/jquery.min.js"></script>
@@ -798,6 +795,13 @@
           });
         })();
         </script>
+<script>let preloader = document.getElementById("preloader")
+    if (preloader) {
+      window.addEventListener('load', () => {
+        preloader.remove()
+      });
+    }</script>
+       
 </body>
 
 </html>

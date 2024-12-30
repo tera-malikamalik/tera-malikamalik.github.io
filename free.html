@@ -68,7 +68,7 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
-
+    <div id="preloader"></div>
 
     <!-- TOP NAV -->
     <div class="top-nav" id="home">
@@ -454,6 +454,13 @@
           });
         })();
         </script>
+        <script>let preloader = document.getElementById("preloader");
+            if (preloader) {
+              window.addEventListener('load', () => {
+                preloader.remove()
+              });
+            }
+            </script>
 </body>
 
 </html>
