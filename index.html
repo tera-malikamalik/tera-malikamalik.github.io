@@ -1,807 +1,695 @@
-
-
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta content="Kami menyediakan cartridge compatible, Harga lebih murah dari produk original, kualitas setara original. Hemat hingga 30% lebih. Hasil cetak garansi dijamin bagus, pekat dan warna solid." name="description">
-    <meta content="" name="keywords">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link href="favicon.png" rel="apple-touch-icon">
+    <title>BKPM 2026</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        function aktifKirimBtn() {
-            document.getElementById("kirim").disabled =false;
-            
-        }
-    </script>
-
-    <title>herlyk citra prima</title>
-    <style>
-        .wa_btn {
-        position: fixed;
-        right: 30px;
-        bottom: 50px;
-        text-decoration: none;
-        color: black;
-       /*  background-color:rgb(19, 214, 15); */
-        padding: 10px 20px;
-        border-radius: 13px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-      }
-      
-      .wa_btn i {
-        font-size: 60px;
-        padding: 10px 10px;
-        background-color: rgb(19, 214, 15);
-        border-radius: 50%;
-        height: 60px;
-        width: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: 125px;
-        color: #fff;
-      
-      }
-      @media (max-width : 576px){
-        .wa_btn {
-          background-color: transparent;
-        }
-        .wa_btn span {
-          display: none;
-        }
-        .wa_btn i {
-          right: 35px;
-        }
-      }
-      </style>
-</head>
-
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
-
-    <div id="preloader"></div>
-    <!-- TOP NAV -->
-    <div class="top-nav" id="home">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-auto">
-                    <p> <i class='bx bxs-envelope'></i> info@herlykgroup.com</p>
-                    <p> <i class='bx bxs-phone-call'></i> 021 799-7777</p>
-                </div>
-                <div class="col-auto social-icons">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                   <!--  <a href="#"><i class='bx bxl-pinterest'></i></a> -->
-                </div>
-            </div>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" /></head
+  ><!-- Ekko Lightbox -->
+  <!-- <link rel="stylesheet" href="assets/plugin/ekko-lightbox/ekko-lightbox.css" /> -->
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="#"> <img src="assets/image/logo.png" alt="Logo" width="300" height="30" class="d-inline-block align-text-top" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Peluang Invesasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hilirisasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Daerah</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Informasi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Kawasan </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">KI</a></li>
+                <li><a class="dropdown-item" href="#">KIK</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-    </div>
-
-    <!-- BOTTOM NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <img src="img/logo hcp.jpg" class="img-circle" alt="" style="width: 100px;" ></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#milestone">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">Our Clients</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">Contact</a>
-                    </li>
-                  <!--   <li class="nav-item">
-                        <a class="nav-link" href="#reviews">Reviews</a>
-                    </li> -->
-                   <!--  <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                    </li> -->
-                </ul>
-               <!--  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    class="btn btn-brand ms-lg-3">Contact</a> -->
-            </div>
-        </div>
+      </div>
     </nav>
+    <!-- end navbar -->
+    <!-- hero -->
+    <section class="hero-banner">
+      <div class="container hero-content">
+        <nav>
+          <ol class="breadcrumb breadcrumb-custom">
+            <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+            <li class="breadcrumb-item"><a href="#">Kawasan Industri</a></li>
+            <li class="breadcrumb-item active">Jatiluhur Smart City</li>
+          </ol>
+        </nav>
 
-    <!-- SLIDER -->
-    <div class="owl-carousel owl-theme hero-slider">
-        <div class="slide slide1">
-            <div class="container" data-aos="fade-up">
-                <div class="row">
-                  <!--   <div class="col-12 text-center text-white">
-                        <h6 class="text-white text-uppercase">mitra Bisnis professional</h6>
-                        <h1 class="display-3 my-4">ONE PRICE<br />FREE PRINTER</h1>
-                        <a href="#" class="btn btn-brand">Get Started</a>
-                        <a href="#" class="btn btn-outline-light ms-3">Our work</a>
-                    </div> -->
-                </div>
-            </div>
+        <div class="hero-category">Kawasan Industri Strategis</div>
+
+        <h1 class="hero-title mt-3">
+          KAWASAN INDUSTRI
+
+          <br />
+
+          <span>JATILUHUR</span>
+
+          <br />
+
+          <span>SMART CITY</span>
+        </h1>
+
+        <p class="hero-desc">Kawasan industri terintegrasi di Purwakarta yang dirancang untuk menjadi pusat pertumbuhan industri masa depan dengan dukungan infrastruktur modern, akses strategis, dan ekosistem bisnis yang kompetitif.</p>
+
+        <div class="hero-location">
+          <i class="fa-solid fa-location-dot"></i>
+
+          Jl. Industri, Purwakarta, Jawa Barat, Indonesia
         </div>
-        <div class="slide slide2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center text-white">
-                        <a href="free.html#about" class="btn btn-brand">Pelajari Sekarang</a>
-                        <h6 class="text-white text-uppercase"></h6>
-                        <h1 class="display-3 my-4"><br /></h1>
-                       
-                        <!--  <a href="#" class="btn btn-outline-light ms-3">Our work</a>  -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- ABOUT -->
-    <section id="services" class="text-right"  >
-        <div class="container" data-aos="fade-up">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
-                        <h6>About US</h6>
-                        <h1> Berdiri Sejak Tahun 2003 </h1>
-                       <!--  <hr class="border border-danger border-2"> -->
-                        <p class="mx-auto">PT. Herlyk Citra Prima membuka kantor di Gedung Herlyk, JI. Mampang Prapatan. Sejak awal berdiri, Kami telah memenuhi kebutuhan pelanggan dalam hal:
+      </div>
 
-                            <div class="ms-4">
-                                <p><ul>
-                                    <li>
-                                        Pengadaan Cartridge Compatible Yang Berkualitas.
-                                    </li>
-                                    <li>
-                                        Penyewaan Mesin Fotocopy Hewlett Packard.
-                                    </li>
-                                    <li>
-                                        Perawatan dan Perbaikan Printer.
-    
-                                    </li>
-                                    <li>
-                                        Pengadaan Printer LaserJet, DeskJet, Dotmatrix Untuk Merk Hewlett Packard.
-                                    </li>
-                                    <li>
-                                        Pengadaan PC, Server, Notebook Merk Hewlett Packard, Dell, Acer, IBM, Lenovo, Toshiba, Apple, dll.
-                                    </li>
-                                </ul> </p>
-                                
-                            </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="service">
-                        <img src="img/top.jpg" alt="">
-                        <h3>20 TAHUN</h3>
-                        <p>Sudah berpengalaman lebih dari 20 tahun dalam industri Printer dan Cartridge Compatible</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service">
-                        <img src="img/icon2.png" alt="">
-                        <h3>TOP BRAND</h3>
-                        <p>Cartridge Compatible kami menggunakan bahan baku toner dan part cartridge yang berkualitas</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="service">
-                         <img src="img/icon3.png" alt="">
-                        <h3> 500++ Klien</h3>
-                        <p>Klien kami berasal dari segala sektor swasta dan pemerintahan</p>
-                    </div>
-                </div>
-               
-            </div>
-        </div>
-    </section>
-   
-   
-
-    <!-- MILESTONE -->
-    <section id="milestone">
-        <div class="container" data-aos="fade-up">
-            <div class="row  gy-4">
-                <div class="col-lg-8 col-sm-6">
-                    <h1 class="display-4">One Price <h1 class="display-4" style="color: red;">Free <h1 class="display-4">Printer</h1>
-                    <p class="col-lg-6 mb-0">Gratis peminjaman printer HANYA dengan menggunakan compatible cartridge toner Herlyk Citra Prima. Hasil cetak berkualitas setara original. Gratis maintenance per bulan.</p><br>
-                    <p class="col-lg-6 mb-0"><a href="free.html#about" class="btn btn-brand">VIEW SERVICE</a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <img src="img/laserjet.png" alt="" data-aos="fade-zoom-in"
-                    data-aos-easing="ease-in-back"
-                    data-aos-delay="300"
-                    data-aos-offset="0">
-                </div>
-             
-            </div>
-        </div>
-    </section>
-   
-
-    <section id="team">
-        <div class="container" data-aos="fade-up">
-            <div class="row">
-                <div class="col-12">
-                    <div class="intro">
-                       <!--  <h6>Team</h6> -->
-                        <h1>Our Clients</h1>
-                        <p class="mx-auto">Kami berdiri pada tahun 2003 sudah banyak perusahaan swasta dan pemerintahan yang menjadi klien tetap kami, berikut beberapa klien kami:</p>
-                    </div>
-                </div>
-            </div>
-            <div id="client-slider" class="owl-theme owl-carousel">
-           
-               
-                <div class="col-lg-8">
-                    <div class="team-member">
-                        <div class="image">
-                            <img src="img/client/Logo-rs-fatmawati.png" alt="">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
-                            <div class="overlay"></div> -->
-                        </div>
-                        </div>
-
-             </div>
-                <div class="col-lg-8">
-                    <div class="team-member">
-                        <div class="image">
-                            <img src="img/client/logo puri cinere.jpg" alt="">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
-                            <div class="overlay"></div> -->
-                        </div>
-
-                       <!--  <h5>Marvin McKinney</h5>
-                        <p>Marketing Coordinator</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12">
-                    <div class="team-member">
-                        <div class="image">
-                            <img src="img/client/BRI-Life.jpg" alt="">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
-                            <div class="overlay"></div> -->
-                        </div>
-
-                       <!--  <h5>Marvin McKinney</h5>
-                        <p>Marketing Coordinator</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12">
-                    <div class="team-member">
-                        <div class="image">
-                            <img src="img/client/citilink.jpg" alt="">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
-                            <div class="overlay"></div> -->
-                        </div>
-
-                       <!--  <h5>Marvin McKinney</h5>
-                        <p>Marketing Coordinator</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12">
-                    <div class="team-member">
-                        <div class="image">
-                            <img src="img/client/pngegg.png" alt="">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
-                            <div class="overlay"></div> -->
-                        </div>
-
-                       <!--  <h5>Marvin McKinney</h5>
-                        <p>Marketing Coordinator</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12">
-                    <div class="team-member">
-                        <div class="image">
-                            <img src="img/client/alfamidi.png" alt="">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
-                            <div class="overlay"></div> -->
-                        </div>
-
-                       <!--  <h5>Marvin McKinney</h5>
-                        <p>Marketing Coordinator</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12">
-                    <div class="team-member">
-                        <div class="image">
-                            <img src="img/client/airasia.png" alt="">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
-                            <div class="overlay"></div> -->
-                        </div>
-
-                       <!--  <h5>Marvin McKinney</h5>
-                        <p>Marketing Coordinator</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12">
-                    <div class="team-member">
-                        <div class="image">
-                            <img src="img/client/mnc.png" alt="">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
-                            <div class="overlay"></div> -->
-                        </div>
-
-                       <!--  <h5>Marvin McKinney</h5>
-                        <p>Marketing Coordinator</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12">
-                    <div class="team-member">
-                        <div class="image">
-                            <img src="img/client/nestle.jpg" alt="">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
-                            <div class="overlay"></div> -->
-                        </div>
-
-                       <!--  <h5>Marvin McKinney</h5>
-                        <p>Marketing Coordinator</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12">
-                    <div class="team-member">
-                        <div class="image">
-                            <img src="img/client/alfamart.png" alt="">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
-                            <div class="overlay"></div> -->
-                        </div>
-
-                       <!--  <h5>Marvin McKinney</h5>
-                        <p>Marketing Coordinator</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12">
-                    <div class="team-member">
-                        <div class="image">
-                            <img src="img/client/transtv.png" alt="">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
-                            <div class="overlay"></div> -->
-                        </div>
-
-                       <!--  <h5>Marvin McKinney</h5>
-                        <p>Marketing Coordinator</p> -->
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12">
-                    <div class="team-member">
-                        <div class="image">
-                            <img src="img/client/ocbc.png" alt="">
-                            <!-- <div class="social-icons">
-                                <a href="#"><i class='bx bxl-facebook'></i></a>
-                                <a href="#"><i class='bx bxl-twitter'></i></a>
-                                <a href="#"><i class='bx bxl-instagram'></i></a>
-                                <a href="#"><i class='bx bxl-pinterest'></i></a>
-                            </div>
-                            <div class="overlay"></div> -->
-                        </div>
-
-                       <!--  <h5>Marvin McKinney</h5>
-                        <p>Marketing Coordinator</p> -->
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-light" id="reviews">
-
-        <div class="owl-theme owl-carousel reviews-slider container">
-            <div class="review">
-                <div class="person">
-                    <img src="img/client/Logo-rs-fatmawati.png" alt="">
-                    <h5>RS Fatmawati</h5>
-                   <!--  <small>Market Development Manager</small> -->
-                </div>
-                <h3>Kualitas toner laserjet baik, pemesanan cepat diproses, produk yg ditawarkan menarik, pelayanan maintenance printer sangat memuaskan</h3>
-                <div class="stars">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class="bx bxs-star-half"></i>
-                </div>
-                <i class='bx bxs-quote-alt-left'></i>
-            </div>
-            <div class="review">
-                <div class="person">
-                    <img src="img/client/logo puri cinere.jpg" alt="">
-                    <h5>RS Puri Cinere</h5>
-                   <!--  <small>Market Development Manager</small> -->
-                </div>
-                <h3>Herlyk selalu mudah dihubungi, cepat tanggap dan memiliki kerjasama tim yg baik</h3>
-                <div class="stars">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class="bx bxs-star-half"></i>
-                </div>
-                <i class='bx bxs-quote-alt-left'></i>
-            </div>
-            <div class="review">
-                <div class="person">
-                    <img src="img/client/BRI-Life.jpg" alt="">
-                    <h5>BRI-Life</h5>
-                  <!--   <small>Market Development Manager</small> -->
-                </div>
-                <h3>Kami memilih Herlyk sebagai partner print kami dikantor karena Cepat, Hasil print bagus, maintenance printer yg rutin</h3>
-                <div class="stars">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class="bx bxs-star-half"></i>
-                </div>
-                <i class='bx bxs-quote-alt-left'></i>
-            </div>
-            <div class="review">
-                <div class="person">
-                    <img src="img/client/citilink.jpg" alt="">
-                    <h5>Citilink</h5>
-                  <!--   <small>Market Development Manager</small> -->
-                </div>
-                <h3>Puas dengan pelayanan yg cepat serta service yg baik, untuk hasil print kualitasnya oke
-                </h3>
-                <div class="stars">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class="bx bxs-star-half"></i>
-                </div>
-                <i class='bx bxs-quote-alt-left'></i>
-            </div>
-            <div class="review">
-                <div class="person">
-                    <img src="img/client/airasia.png" alt="">
-                    <h5>Air Asia</h5>
-                  <!--   <small>Market Development Manager</small> -->
-                </div>
-                <h3>Terima kasih atas segala support dalam pelayanan servisnya
-                </h3>
-                <div class="stars">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class="bx bxs-star-half"></i>
-                </div>
-                <i class='bx bxs-quote-alt-left'></i>
-            </div>
-        </div>
-    </section>
-    <section class="bg-light" id="portfolio">
-        <div class="container" data-aos="fade-up">
-            <div class="row">
-                <div class="col-12">
-                    <div class="intro">
-                       <!--  <h6>Work</h6> -->
-                        <h1>Our Portfolio </h1>
-                        <p class="mx-auto">Kami memiliki Teknisi yang Berpengalaman</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="projects-slider" class="owl-theme owl-carousel">
-            <div class="project">
-                <div class="overlay"></div>
-                <img src="img/project1.jpg" alt="">
-                <div class="content">
-                   <!--  <h2>Replace Toner</h2> -->
-                    <h6>Service Printer</h6>
-                </div>
-            </div>
-           <!--  <div class="project">
-                <div class="overlay"></div>
-                <img src="img/project2.jpg" alt="">
-                <div class="content">
-                    <h2>Service Printer</h2>
-                    <h6></h6>
-                </div>
-            </div> -->
-            <div class="project">
-                <div class="overlay"></div>
-                <img src="img/project3.jpg" alt="">
-                <div class="content">
-                    <!-- <h2>Maintenance Printer</h2> -->
-                    <h6>Maintenance Printer</h6>
-                </div>
-            </div>
-            <!-- <div class="project">
-                <div class="overlay"></div>
-                <img src="img/project4.jpg" alt="">
-                <div class="content">
-                    <h2>Re engineering Process</h2>
-                    <h6></h6>
-                </div>
-            </div> -->
-            <div class="project">
-                <div class="overlay"></div>
-                <img src="img/project5.jpg" alt="">
-                <div class="content">
-                    <h2></h2>
-                    <h6>Replace Toner</h6>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="blog" class="contact">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="section-title">
-            <h1>Contact Us</h1>
-          </div>
-  
-          <div>
-            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.130449879436!2d106.82375397593638!3d-6.246535093741843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3da5e149e0b%3A0xb1150d9c2b981344!2sPT%20Herlyk%20Citra%20Prima!5e0!3m2!1sid!2sid!4v1724940377776!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
-          </div>
-          
-          <div class="row mt-5">
-  
-            <div class="col-lg-4">
-              <div class="info">
-                <div class="address">
-                  <i class="bi bi-geo-alt"></i>
-                  <h4>Location:</h4>
-                  <p>Jl. Mampang Prapatan Raya No.77, Tegal Parang, Mampang Prapatan JAKARTA Selatan 12790</p>
-                </div>
-  
-                <div class="email">
-                  <i class="bi bi-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>info@herlykgroup.com</p>
-                </div>
-                <div class="email">
-                  <i class="bi bi-whatsapp"></i>
-                  <h4>Whatsapp</h4>
-                  <a href="https://wa.me/6287796670495?text=Halo%20%20" target="_blank"><p>+62 877-9667-0495</p></a>
-                </div>
-  
-              </div>
-  
-            </div>
-  
-            <div class="col-lg-8 mt-5 mt-lg-0">
-                <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
-                    <strong>Terimakasih!</strong> Pesan Anda sudah kami terima.
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                  </div>
-  
-               <!-- <form class="php-email-form" id="email-form"> -->
-                <form action="sendmail.php" method="POST">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                </div>
-                <div class="form-group mt-3">
-                    <div class="g-recaptcha" data-sitekey="6Lf9u6gqAAAAANHAEutQ3VrQDkbmngYnsp5FPqN_" data-callback="aktifKirimBtn"></div>
-                </div>
-                <!--  <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div> -->
-                <div class="text-center"><button class="btn btn-success mt-3" type="submit" id="kirim" name="btnKirim" >Send Message</button>
-                    <button class="btn btn-success mt-3 d-none" type="button" id="tunggu" disabled>
-                        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-                        <span role="status">Loading...</span>
-                      </button></div>
-              </form>
-  
-            </div>
-  
-          </div>
-  
-        </div>
-      </section><!-- End Contact Section -->
-  
-    </main><!-- End #main -->
-   <!--  <section id="blog">
+      <div class="stats-wrapper">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="intro">
-                        <h6>Blog</h6>
-                        <h1>Blog Posts</h1>
-                        <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                            roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
-                    </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <div class="stat-icon green">
+                  <i class="fa-solid fa-users"></i>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <article class="blog-post">
-                        <img src="img/project5.jpg" alt="">
-                        <a href="#" class="tag">Web Design</a>
-                        <div class="content">
-                            <small>01 Dec, 2022</small>
-                            <h5>Web Design trends in 2022</h5>
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-                                piece of classical Latin literature from</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-md-4">
-                    <article class="blog-post">
-                        <img src="img/project4.jpg" alt="">
-                        <a href="#" class="tag">Programming</a>
-                        <div class="content">
-                            <small>01 Dec, 2022</small>
-                            <h5>Web Design trends in 2022</h5>
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-                                piece of classical Latin literature from</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-md-4">
-                    <article class="blog-post">
-                        <img src="img/project2.jpg" alt="">
-                        <a href="#" class="tag">Marketing</a>
-                        <div class="content">
-                            <small>01 Dec, 2022</small>
-                            <h5>Web Design trends in 2022</h5>
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-                                piece of classical Latin literature from</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
-    <footer>
-        <div class="footer-top text-center">
-            <div class="container" >
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <h4 class="navbar-brand"> <a class="navbar-brand" href="#home">
-                            <img src="favicon.png" class="img-circle" alt="" style="width: 100px;"></a>herlyk citra prima</h4>
-                        <p>Innovative & Commitment For Your Business</p>
-                        <div class="col-auto social-icons">
-                            <a href="#"><i class='bx bxl-facebook'></i></a>
-                            <a href="#"><i class='bx bxl-twitter'></i></a>
-                            <a href="#"><i class='bx bxl-instagram'></i></a>
-                        </div>
-                      <!--   <div class="col-auto conditions-section">
-                            <a href="#">privacy</a>
-                            <a href="#">terms</a>
-                            <a href="#">disclaimer</i></a>
-                        </div> -->
-                    </div>
+                <div>
+                  <div class="stat-title">Tingkat Okupansi</div>
+
+                  <div class="stat-value">3,22%</div>
+
+                  <div class="stat-sub">(39 Ha)</div>
                 </div>
+              </div>
             </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <div class="stat-icon blue">
+                  <i class="fa-solid fa-map"></i>
+                </div>
+
+                <div>
+                  <div class="stat-title">Total Luas Lahan</div>
+
+                  <div class="stat-value">1.211 Ha</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <div class="stat-icon purple">
+                  <i class="fa-solid fa-building"></i>
+                </div>
+
+                <div>
+                  <div class="stat-title">Jumlah Tenant</div>
+
+                  <div class="stat-value">6</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <div class="stat-icon teal">
+                  <i class="fa-solid fa-file-contract"></i>
+                </div>
+
+                <div>
+                  <div class="stat-title">Status Lahan</div>
+
+                  <div class="stat-value" style="font-size: 30px">Beli / Sewa</div>
+
+                  <div class="stat-sub">2020 Update</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="footer-bottom text-center">
-            <p class="mb-0">Copyright Teracc 2024. All rights Reserved</p> Distributed By <a
-                hrefs="">Teracc</a>
+      </div>
+    </section>
+    <!-- end hero -->
+    <!-- master plan s/d map -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <h2 class="fw-bold mb-4">MASTERPLAN KAWASAN</h2>
+
+        <div class="row g-4">
+          <!-- MASTERPLAN -->
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-sm">
+              <img src="assets/image/jatiluhur/masterplan.jpeg" class="img-fluid rounded-top" alt="Masterplan" />
+
+              <!-- Thumbnail -->
+              <div class="p-3">
+                <div class="row g-2">
+                  <div class="col">
+                    <a href="assets/image/jatiluhur/masterplan2.jpg" data-toggle="lightbox" data-gallery="plan_gallery" class="img-fluid rounded border">
+                      <img src="assets/image/jatiluhur/masterplan2.jpg" class="img-fluid" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="col">
+                    <a href="assets/image/jatiluhur/masterplan.jpeg" data-toggle="lightbox" data-gallery="plan_gallery" class="img-fluid rounded border">
+                      <img src="assets/image/jatiluhur/masterplan.jpeg" class="img-fluid" alt="" />
+                    </a>
+                  </div>
+
+                  <div class="col">
+                    <a href="assets/image/jatiluhur/masterplan2.jpg" data-toggle="lightbox" data-gallery="plan_gallery" class="img-fluid rounded border">
+                      <img src="assets/image/jatiluhur/masterplan2.jpg" class="img-fluid" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- INFORMASI -->
+          <div class="col-lg-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="fw-bold mb-4">Informasi Utama</h5>
+
+                <ul class="list-unstyled">
+                  <li class="d-flex mb-3">
+                    <i class="bi bi-building text-success me-3 fs-5"></i>
+
+                    <div>
+                      <small class="text-muted"> Pengelola </small>
+
+                      <div class="fw-semibold">PT Multi Optimal Sentosa</div>
+                    </div>
+                  </li>
+
+                  <li class="d-flex mb-3">
+                    <i class="bi bi-telephone text-success me-3 fs-5"></i>
+
+                    <div>
+                      <small class="text-muted"> Call Center </small>
+
+                      <div class="fw-semibold">xxxxxxxxxxx</div>
+                    </div>
+                  </li>
+
+                  <li class="d-flex mb-3">
+                    <i class="bi bi-envelope text-success me-3 fs-5"></i>
+
+                    <div>
+                      <small class="text-muted"> Email </small>
+
+                      <div class="fw-semibold">xxxxxxxxxxx</div>
+                    </div>
+                  </li>
+
+                  <li class="d-flex mb-3">
+                    <i class="bi bi-globe text-success me-3 fs-5"></i>
+
+                    <div>
+                      <small class="text-muted"> Website </small>
+
+                      <div class="fw-semibold">www.website.com</div>
+                    </div>
+                  </li>
+
+                  <li class="d-flex mb-3">
+                    <i class="bi bi-calendar-check text-success me-3 fs-5"></i>
+
+                    <div>
+                      <small class="text-muted"> Tahun Operasional </small>
+
+                      <div class="fw-semibold">2020</div>
+                    </div>
+                  </li>
+
+                  <li class="d-flex">
+                    <i class="bi bi-gear text-success me-3 fs-5"></i>
+
+                    <div>
+                      <small class="text-muted"> Sektor Industri </small>
+
+                      <div class="fw-semibold">Manufaktur, Data Center, Logistic, Automotive</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <a href="https://wa.me/6287796670495?text=Halo%20cartrige%20mart" target="_blank" class="wa_btn"><i class="bi bi-whatsapp"></i></a>
+
+        <!-- BOTTOM -->
+        <div class="row g-4 mt-2">
+          <!-- Infrastruktur -->
+
+          <div class="col-lg-3">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="fw-bold mb-4">Infrastruktur</h5>
+
+                <div class="row">
+                  <div class="col-6 mb-3">
+                    <li class="d-flex mb-3">
+                      <i class="bi bi-lightning-fill text-success me-3 fs-5"></i>
+
+                      <div>
+                        <small class="text-muted"> Listrik </small>
+
+                        <div class="fw-semibold">420 MVA</div>
+                      </div>
+                    </li>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <li class="d-flex mb-3">
+                      <i class="bi bi-recycle text-success me-3 fs-5"></i>
+
+                      <div>
+                        <small class="text-muted"> IPAL </small>
+
+                        <div class="fw-semibold">10.000 m³/hari</div>
+                      </div>
+                    </li>
+                  </div>
+
+                  <div class="col-6 mb-3">
+                    <li class="d-flex mb-3">
+                      <i class="bi bi-droplet-fill text-success me-3 fs-5"></i>
+
+                      <div>
+                        <small class="text-muted"> Air Bersih </small>
+
+                        <div class="fw-semibold">21.600 m³/hari</div>
+                      </div>
+                    </li>
+                  </div>
+
+                  <div class="col-6 mb-3">
+                    <li class="d-flex mb-3">
+                      <i class="bi bi-router-fill text-success me-3 fs-5"></i>
+
+                      <div>
+                        <small class="text-muted"> Telekomunikasi </small>
+
+                        <div class="fw-semibold">Indonet</div>
+                      </div>
+                    </li>
+                  </div>
+
+                  <div class="col-6">
+                    <li class="d-flex mb-3">
+                      <i class="text-success me-3 fs-5"></i>
+
+                      <div>
+                        <small class="text-muted"> Gas </small>
+
+                        <div class="fw-semibold">125.000 MMBTU</div>
+                      </div>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Akses -->
+
+          <div class="col-lg-5">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="fw-bold mb-4">Aksesibilitas</h5>
+                <div class="row">
+                  <div class="col-6 mb-3">
+                    <li class="d-flex mb-3">
+                      <i class="bi bi-car-front-fill text-success me-3 fs-5"></i>
+
+                      <div>
+                        <small class="text-muted"> Jalan Tol </small>
+                        <div>
+                          <small class="fw-semibold">Tol Jakarta-Cikampek 3 Km</small>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+                  <div class="col-6 mb-3">
+                    <li class="d-flex mb-3">
+                      <i class="bi bi-nut-fill text-success me-3 fs-5"></i>
+
+                      <div>
+                        <small class="text-muted"> Pelabuhan </small>
+                        <div>
+                          <small class="fw-semibold">Pelabuhan Tanjung Priok 100 Km</small>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+
+                  <div class="col-6 mb-3">
+                    <li class="d-flex mb-3">
+                      <i class="bi bi-airplane-fill text-success me-3 fs-5"></i>
+
+                      <div>
+                        <small class="text-muted"> Bandara </small>
+                        <div>
+                          <small class="fw-semibold">Bandara Soekarno Hatta 88 Km</small>
+                        </div>
+                        <div>
+                          <small class="fw-semibold">Bandara Kertajati 65 Km</small>
+                        </div>
+                      </div>
+                    </li>
+                  </div>
+
+                  <div class="col-6 mb-3">
+                    <li class="d-flex mb-3">
+                      <i class="bi bi-car-front-fill text-success me-3 fs-5"></i>
+
+                      <div>
+                        <small class="text-muted"> Jarak Ke Jakarta </small>
+
+                        <div class="fw-semibold">76 KM</div>
+                      </div>
+                    </li>
+                  </div>
+
+                  <div class="col-6">
+                    <li class="d-flex mb-3">
+                      <i class="bi bi-car-front-fill text-success me-3 fs-5"></i>
+
+                      <div>
+                        <small class="text-muted"> Jarak Ke Bandung </small>
+
+                        <div class="fw-semibold">52 KM</div>
+                      </div>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lokasi -->
+
+          <div class="col-lg-4">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="fw-bold mb-4">Lokasi</h5>
+                <iframe
+                  style="border: 0; width: 100%; height: 270px"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.2937039205935!2d107.41425157593793!3d-6.50308699348916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690dba0d49e4cd%3A0xb8509c3f675cc839!2sJISC%20-%20Jatiluhur%20Industrial%20Smart%20City!5e0!3m2!1sen!2sid!4v1787282608968!5m2!1sen!2sid"
+                  frameborder="0"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end master plan s/d map -->
+    <!-- gallery -->
+    <section>
+      <div class="container mb-5">
+        <div class="row">
+          <h2 class="fw-bold mb-4">Gallery</h2>
+        </div>
+        <div class="row">
+          <a href="assets/image/jatiluhur/poto1.JPG" data-toggle="lightbox" data-gallery="gallery" class="col-md-12 col-lg-2 img-fluid py-2">
+            <img src="assets/image/jatiluhur/poto1.JPG" class="img-fluid" alt="" />
+          </a>
+          <a href="assets/image/jatiluhur/poto2.JPG" data-toggle="lightbox" data-gallery="gallery" class="col-md-12 col-lg-2 img-fluid py-2">
+            <img src="assets/image/jatiluhur/poto2.JPG" class="img-fluid" alt="" />
+          </a>
+          <a href="assets/image/hero.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-12 col-lg-2 img-fluid py-2">
+            <img src="assets/image/hero.jpg" class="img-fluid" alt="" />
+          </a>
+          <a href="assets/image/masterplan.jpeg" data-toggle="lightbox" data-gallery="gallery" class="col-md-12 col-lg-2 img-fluid py-2">
+            <img src="assets/image/masterplan.jpeg" class="img-fluid" alt="" />
+          </a>
+          <a href="assets/image/hero.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-12 col-lg-2 img-fluid py-2">
+            <img src="assets/image/hero.jpg" class="img-fluid" alt="" />
+          </a>
+          <a href="assets/image/masterplan.jpeg" data-toggle="lightbox" data-gallery="gallery" class="col-md-12 col-lg-2 img-fluid py-2">
+            <img src="assets/image/masterplan.jpeg" class="img-fluid" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- end gallery -->
+    <!-- keunggulan investasi -->
+
+    <section class="investment-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <small class="text-success fw-semibold text-uppercase"> Keunggulan Investasi </small>
+
+          <h2 class="fw-bold mt-2">
+            Mengapa Berinvestasi di
+            <span class="text-primary">Jatiluhur Smart City?</span>
+          </h2>
+
+          <p class="text-muted mx-auto" style="max-width: 700px">Kawasan industri modern dengan infrastruktur lengkap, lokasi strategis, serta ekosistem bisnis yang mendukung pertumbuhan investasi jangka panjang.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card h-100">
+              <div class="icon bg-success-subtle text-success">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+
+              <h5>Lokasi Strategis</h5>
+
+              <p>Berada di jalur utama yang menghubungkan Jakarta, Bandung, Pelabuhan Patimban dan Bandara Kertajati.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card h-100">
+              <div class="icon bg-primary-subtle text-primary">
+                <i class="bi bi-building"></i>
+              </div>
+
+              <h5>Infrastruktur Siap Pakai</h5>
+
+              <p>Didukung listrik, air, gas, telekomunikasi, jalan kawasan serta utilitas industri yang lengkap.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card h-100">
+              <div class="icon bg-success-subtle text-success">
+                <i class="bi bi-tree"></i>
+              </div>
+
+              <h5>Kota Industri Hijau</h5>
+
+              <p>Konsep smart city yang mengutamakan keberlanjutan, ruang terbuka hijau, dan lingkungan ramah investasi.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="feature-card h-100">
+              <div class="icon bg-purple">
+                <i class="bi bi-people"></i>
+              </div>
+
+              <h5>Ekosistem Industri Lengkap</h5>
+
+              <p>Mendukung rantai pasok industri dengan tenant, logistik, pusat data, serta fasilitas pendukung lainnya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end keungulan investasi -->
+    <!-- =========================================
+     CTA / SIAP BERINVESTASI
+========================================= -->
+    <section class="investment-cta py-4">
+      <div class="container">
+        <div class="cta-wrapper">
+          <!-- Background overlay -->
+          <div class="cta-overlay"></div>
+
+          <div class="row align-items-center position-relative">
+            <!-- Text -->
+            <div class="col-lg-6">
+              <div class="cta-content">
+                <span class="cta-small-title"> INVESTASI DI KAWASAN INDUSTRI </span>
+
+                <h2 class="cta-title">
+                  Siap Berinvestasi di
+                  <span>Jatiluhur Smart City?</span>
+                </h2>
+
+                <p class="cta-description">Tim kami siap membantu Anda mendapatkan informasi lengkap dan solusi terbaik untuk investasi Anda.</p>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="col-lg-6">
+              <div class="cta-buttons">
+                <!-- Standar Factory Building -->
+                <button type="button" class="btn btn-success">Standar Factory Building</button>
+                <!--  <a href="#factory-building" class="btn btn-factory">
+                  <i class="bi bi-building"></i>
+                  <span>Standar Factory Building</span>
+                </a>
+ -->
+                <!-- Download Brosur -->
+                <button type="button" class="btn btn-primary">Unduh Brosur</button>
+                <!--  <a href="assets/brosur-jatiluhur-smart-city.pdf" class="btn btn-brochure" target="_blank" download>
+                  <i class="bi bi-download"></i>
+                  <span>Unduh Brosur</span>
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================
+     FOOTER
+========================= -->
+    <footer class="site-footer">
+      <div class="container">
+        <!-- Main Footer -->
+        <div class="row gy-4 align-items-start">
+          <!-- Logo & Address -->
+          <div class="col-lg-7 col-md-7">
+            <div class="footer-brand">
+              <div class="d-flex align-items-start gap-3">
+                <!-- Logo -->
+                <div class="footer-logo">
+                  <div class="logo-symbol">
+                    <i class="bi bi-buildings"></i>
+                  </div>
+                </div>
+
+                <!-- Brand Text -->
+                <div>
+                  <h5 class="footer-title mb-1">POTENSI INVESTASI REGIONAL</h5>
+
+                  <p class="footer-subtitle mb-3">KEMENTERIAN INVESTASI DAN HILIRISASI/BKPM</p>
+
+                  <div class="footer-address">
+                    <p class="mb-1">
+                      <i class="bi bi-geo-alt-fill me-2"></i>
+                      Jl. Jenderal Gatot Subroto No. 44
+                    </p>
+
+                    <p class="mb-1">
+                      <i class="bi bi-building me-2"></i>
+                      Jakarta Selatan, DKI Jakarta, Indonesia
+                    </p>
+
+                    <p class="mb-1">
+                      <i class="bi bi-telephone-fill me-2"></i>
+                      (021) 525 2008
+                    </p>
+
+                    <p class="mb-0">
+                      <i class="bi bi-envelope-fill me-2"></i>
+                      info@investindonesia.go.id
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Follow Us -->
+          <div class="col-lg-5 col-md-5 text-lg-end">
+            <div class="footer-social">
+              <h6 class="footer-heading">Ikuti Kami</h6>
+
+              <div class="social-list">
+                <a href="#" class="social-item" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="#" class="social-item" aria-label="YouTube">
+                  <i class="bi bi-youtube"></i>
+                </a>
+
+                <a href="#" class="social-item" aria-label="X">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+
+                <a href="#" class="social-item" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="footer-divider" />
+
+        <!-- Bottom Footer -->
+        <div class="row align-items-center gy-2">
+          <div class="col-md-8">
+            <p class="copyright mb-0">© 2025 Potensi Investasi Regional - Kementerian Investasi dan Hilirisasi/BKPM. Semua Hak Dilindungi.</p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="footer-links text-md-end">
+              <a href="#"> Kebijakan Privasi </a>
+
+              <span>|</span>
+
+              <a href="#"> Syarat & Ketentuan </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
-  
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> 
-    <script src="js/mailjs.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=Your_reCAPTCHA_site_key"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script>
-        AOS.init();
-      </script>
-      <script type="text/javascript">
-        (function(){
-          emailjs.init({
-            publicKey: "lXuxC7AssU_gPvh_f",
+    <!-- jQuery -->
+    <script src="assets/plugin/jquery/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Ekko Lightbox -->
+    <!--  <script src="assets/plugin/ekko-lightbox/ekko-lightbox.min.js"></script> -->
+    <!-- Filterizr-->
+    <!-- <script src="assets/plugin/filterizr/jquery.filterizr.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+    <!--  <script>
+      $(function () {
+        $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+          event.preventDefault();
+          $(this).ekkoLightbox({
+            alwaysShowClose: true,
           });
-        })();
-        </script>
-<script>let preloader = document.getElementById("preloader")
-    if (preloader) {
-      window.addEventListener('load', () => {
-        preloader.remove()
+        });
+        $(this).addClass("active");
       });
-    }</script>
-       
-</body>
-
+    </script> -->
+  </body>
 </html>
